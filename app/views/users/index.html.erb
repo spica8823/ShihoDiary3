@@ -1,0 +1,4 @@
+  <p>ユーザー一覧</p>
+  <% @users.each do |user| %>
+    <%= link_to user.email, "/users/#{user.id}" %><br>
+  <% end %>
